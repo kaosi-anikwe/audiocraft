@@ -1,6 +1,9 @@
 # please make sure you have already a pytorch install that is cuda enabled!
 av
 einops
+firebase-admin==6.4.0
+python-dotenv==1.0.1
+runpod==1.5.2
 flashy>=0.0.1
 hydra-core>=1.1
 hydra_colorlog
@@ -21,3 +24,18 @@ gradio
 torchmetrics
 encodec
 protobuf
+
+# from README
+
+# Ensure torch is installed first (replace torch version if needed)
+# torch==2.1.0
+
+# Install necessary packages for building and installing Python packages
+setuptools
+wheel
+
+# Install audiocraft from the stable release
+# audiocraft==<version>  # Replace <version> with the desired stable release version
+
+# OR install audiocraft from the bleeding edge (GitHub repository)
+audiocraft @ git+https://git@github.com/facebookresearch/audiocraft#egg=audiocraft
